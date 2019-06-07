@@ -54,6 +54,8 @@ var game ={
 
         timer = setInterval(game.countDown, 1000);
         quiz.append("<p>" + questions[0].question + "</p>")
+        quiz.append("<p>" + questions[1].question + "</p>")
+        quiz.append("<p>" + questions[2].question + "</p>")
     
     },
     //Done Function
@@ -62,6 +64,15 @@ var game ={
     done: function(){
     clearInterval(timer)  
     }
+
+//     // function myStopFunction() {
+//         clearInterval(func);
+//     }
+// function myClearFunction(){
+// myStopFunction();
+// $("#seconds").html(pad(00));
+//         $("#minutes").html(pad(00));
+// sec = 0;
     //result function
     //=======================================================
     //stop the timer. Append the results of the quest
